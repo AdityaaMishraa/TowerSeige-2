@@ -2,7 +2,8 @@ class Block{
     constructor(x, y, width, height) {
         var options = {
             restitution :0.4,
-            density:0.5
+            density:0.5,
+            friction:1
 
         }
       
@@ -14,7 +15,7 @@ class Block{
       }
       display(){
         // console.log(this.body.speed)
-        if(this.body.speed>8){
+        if(this.body.speed>5){
           var angle = this.body.angle;
           var pos= this.body.position;
           push();
